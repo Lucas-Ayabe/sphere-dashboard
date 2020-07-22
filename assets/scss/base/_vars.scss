@@ -1,0 +1,45 @@
+$primary: #4dffb5;
+$secondary: #7428d9;
+$light: #f2fffa;
+$dark: #010d08;
+
+$colors: (
+    primary: $primary,
+    secondary: $secondary,
+    light: $light,
+    dark: $dark
+);
+
+$family: Poppins, sans-serif;
+$font-1: 1rem;
+$font-2: 1.25rem;
+$font-3: 1.75rem;
+$font-4: 2.25rem;
+$font-5: 3rem;
+$font-6: 4.5rem;
+
+// Grid
+$gap: 1rem;
+$columns: 12;
+
+$breakpoint-xsm: 480px;
+$breakpoint-sm: 568px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 960px;
+$breakpoint-xlg: 1200px;
+
+$breakpoints: (
+    "xsm": $breakpoint-xsm,
+    "sm": $breakpoint-sm,
+    "md": $breakpoint-md,
+    "lg": $breakpoint-lg,
+    "xlg": $breakpoint-xlg
+);
+
+$container-sizes: (
+    xsm: 460px,
+    sm: 540px,
+    md: 720px,
+    lg: 928px,
+    xlg: 992px
+);

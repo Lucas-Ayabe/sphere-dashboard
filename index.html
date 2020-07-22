@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sphere - Dashboard</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/app.min.css" />
+    </head>
+    <body class="l-dashboard">
+        <nav class="l-dashboard__sidenav c-nav c-nav--vertical">
+            <button class="c-hamburger c-nav__hamburger">
+                <span class="c-hamburger__bar"></span>
+                <span class="c-hamburger__bar"></span>
+                <span class="c-hamburger__bar"></span>
+
+                <span class="c-hamburger__text">MENU</span>
+            </button>
+
+            <ul class="c-nav__menu">
+                <li class="c-nav__item is-selected">
+                    <img src="./assets/icons/sidebar.svg" alt="" />
+                    <a href="#" class="c-nav__link">Dashboard</a>
+                </li>
+
+                <li class="c-nav__item">
+                    <img src="./assets/icons/activity.svg" alt="" />
+                    <a href="#" class="c-nav__link">Activity</a>
+                </li>
+
+                <li class="c-nav__item">
+                    <img src="./assets/icons/users.svg" alt="" />
+                    <a href="#" class="c-nav__link">Users</a>
+                </li>
+            </ul>
+
+            <img
+                src="./assets/images/logo-white-purple.svg"
+                alt=""
+                class="c-nav__logo"
+            />
+        </nav>
+
+        <main class="l-dashboard__main l-flow">
+            <header class="l-dashboard__header c-header">
+                <a href="#" class="c-header__logo">
+                    <img src="./assets/images/logo.svg" alt="" />
+                </a>
+
+                <button class="c-header__avatar c-avatar c-avatar--circle">
+                    JD
+                </button>
+            </header>
+
+            <article class="l-dashboard__content" style="--flow: 1.75rem;">
+                <section>
+                    <h1 class="c-title -lg u-uppercase">
+                        Welcome back,
+                        <span class="u-text-secondary u-bold">Jane</span>
+                    </h1>
+
+                    <div class="l-grid -center">
+                        <div class="l-grid__cell @lg--4">
+                            <div class="c-info-box">
+                                <h2 class="c-info-box__info">366</h2>
+                                <p class="c-info-box__label">active users</p>
+                            </div>
+                        </div>
+                        <div class="l-grid__cell @lg--4">
+                            <div class="c-info-box">
+                                <h2 class="c-info-box__info">1288</h2>
+                                <p class="c-info-box__label">site views</p>
+                            </div>
+                        </div>
+                        <div class="l-grid__cell @lg--4">
+                            <div class="c-info-box">
+                                <h2 class="c-info-box__info">30</h2>
+                                <p class="c-info-box__label">site posts</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="l-flow u-mt-5" style="--flow: 1.75rem">
+                    <h2 class="c-title -separator">Last messages</h2>
+
+                    <ul class="c-list">
+                        <li class="c-list__item">
+                            JOHN DOE - Landing page budget
+                        </li>
+
+                        <li class="c-list__item">
+                            MATTHEW TAYLOR - Institucional website design
+                        </li>
+                        <li class="c-list__item">
+                            JENNY MOORE - E-commerce budget
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+
+        <script src="./assets/js/app.min.js"></script>
+    </body>
+</html>

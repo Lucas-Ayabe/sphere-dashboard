@@ -1,0 +1,13 @@
+.u {
+    &-text-secondary {
+        color: $secondary;
+    }
+
+    &-uppercase {
+        text-transform: uppercase;
+    }
+
+    &-bold {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,17 @@
+.c-info-box {
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px getRgba($dark, 0.3);
+    text-align: center;
+    background: #fff;
+
+    &__info {
+        font-weight: normal;
+        font-size: $font-5;
+        color: $secondary;
+    }
+
+    &__label {
+        font-size: $font-2;
+    }
+}

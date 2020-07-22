@@ -1,0 +1,15 @@
+.c-list {
+    list-style: none;
+
+    &__item {
+        font-weight: bold;
+        padding: 10px 1rem;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px getRgba($dark, 0.5);
+
+        & + & {
+            margin-top: 1em;
+        }
+    }
+}

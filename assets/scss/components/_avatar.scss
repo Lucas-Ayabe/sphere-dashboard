@@ -1,0 +1,17 @@
+.c-avatar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    font-size: $font-2;
+    color: $secondary;
+    font-family: $family;
+    background: transparent;
+    border: 0 solid transparent;
+    background: #fff;
+    box-shadow: 0 2px 4px getRgba($dark, 0.2);
+
+    &--circle {
+        border-radius: 50%;
+    }
+}

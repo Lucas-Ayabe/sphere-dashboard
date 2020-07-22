@@ -1,0 +1,33 @@
+.c-hamburger {
+    position: relative;
+    background: transparent;
+    border: 0 solid transparent;
+    font-family: $family;
+    font-size: $font-4;
+    line-height: 0.7;
+
+    &__bar {
+        position: absolute;
+        left: 0;
+        display: block;
+        width: $font-4;
+        height: 4px;
+        background: #000000;
+
+        &:nth-child(1) {
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            top: calc(50% - 2px);
+        }
+
+        &:nth-child(3) {
+            top: calc(100% - 4px);
+        }
+    }
+
+    &__text {
+        padding-left: calc(#{$font-4} + 1rem);
+    }
+}
