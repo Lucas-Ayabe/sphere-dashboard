@@ -11,15 +11,11 @@
         <link rel="stylesheet" href="./assets/css/app.min.css" />
     </head>
     <body class="l-dashboard">
-        <nav class="l-dashboard__sidenav c-nav c-nav--vertical">
-            <button class="c-hamburger c-nav__hamburger">
-                <span class="c-hamburger__bar"></span>
-                <span class="c-hamburger__bar"></span>
-                <span class="c-hamburger__bar"></span>
-
-                <span class="c-hamburger__text">MENU</span>
-            </button>
-
+        <nav
+            id="sidenav"
+            aria-expanded="false"
+            class="l-dashboard__sidenav c-nav c-nav--vertical"
+        >
             <ul class="c-nav__menu">
                 <li class="c-nav__item is-selected">
                     <img src="./assets/icons/sidebar.svg" alt="" />
@@ -46,6 +42,15 @@
 
         <main class="l-dashboard__main l-flow">
             <header class="l-dashboard__header c-header">
+                <button
+                    id="header-trigger"
+                    data-target="#sidenav"
+                    class="c-hamburger c-header__hamburger"
+                >
+                    <span class="c-hamburger__bar"></span>
+                    <span class="c-hamburger__bar"></span>
+                    <span class="c-hamburger__bar"></span>
+                </button>
                 <a href="#" class="c-header__logo">
                     <img src="./assets/images/logo.svg" alt="" />
                 </a>

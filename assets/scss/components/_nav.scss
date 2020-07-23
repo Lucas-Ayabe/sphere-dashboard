@@ -19,7 +19,6 @@
 
     &--vertical &__item {
         padding: 1em;
-        margin-top: $font-2;
         border-radius: 10px 0 0 10px;
         transition: all 0.3s ease-in-out;
 
@@ -30,6 +29,10 @@
         &.is-selected {
             background: $light;
         }
+    }
+
+    &--vertical &__item + &__item {
+        margin-top: $font-2;
     }
 
     &--vertical &__link {

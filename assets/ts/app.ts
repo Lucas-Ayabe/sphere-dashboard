@@ -1,4 +1,13 @@
-import Header from "./modules/header";
+import { select } from "./helpers/dom";
+import Hamburger from "./modules/Hamburger";
 
-const h = new Header();
-console.log(h);
+const headerTrigger = select("#header-trigger[data-target]");
+
+if (headerTrigger) {
+    const sidenavTrigger = new Hamburger(headerTrigger);
+    sidenavTrigger.init();
+
+    if (window.matchMedia("min-width: 1200px")) {
+        sidenavTrigger.open();
+    }
+}

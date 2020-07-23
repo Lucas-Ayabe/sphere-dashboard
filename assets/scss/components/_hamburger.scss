@@ -5,6 +5,13 @@
     font-family: $family;
     font-size: $font-4;
     line-height: 0.7;
+    min-height: 25px;
+    min-width: $font-4;
+    cursor: pointer;
+
+    &:focus {
+        outline-offset: 8px;
+    }
 
     &__bar {
         position: absolute;

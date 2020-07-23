@@ -1,5 +1,6 @@
 .c-info-box {
-    padding: 2rem 3rem;
+    padding: 1rem 2rem;
+    height: 100%;
     border-radius: 20px;
     box-shadow: 0 2px 4px getRgba($dark, 0.3);
     text-align: center;
@@ -9,6 +10,14 @@
         font-weight: normal;
         font-size: $font-5;
         color: $secondary;
+
+        @include min-width(lg) {
+            font-size: $font-3;
+        }
+
+        @include min-width(xlg) {
+            font-size: $font-5;
+        }
     }
 
     &__label {
