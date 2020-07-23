@@ -7,7 +7,7 @@ if (headerTrigger) {
     const sidenavTrigger = new Hamburger(headerTrigger);
     sidenavTrigger.init();
 
-    if (window.matchMedia("min-width: 1200px")) {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
         sidenavTrigger.open();
     }
 }

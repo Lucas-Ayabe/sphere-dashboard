@@ -15,6 +15,10 @@
         margin-top: auto;
         margin-right: 30px;
         align-self: flex-start;
+
+        @include min-width(md) {
+            margin-right: 60px;
+        }
     }
 
     &--vertical &__menu {
